@@ -17,7 +17,7 @@ Download this repository and reach the directory, run ::
 
 Important! Install FFmpeg
 --------------
-**on Windows**: download `ffmpeg <https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z/>`_ and add ffmpeg.exe path to environment variables.
+**on Windows**: download `ffmpeg <https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z>`_ and add ffmpeg.exe path to environment variables.
 
 **on MacOS**::
 

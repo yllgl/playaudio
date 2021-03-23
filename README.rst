@@ -30,7 +30,6 @@ Important! Install FFmpeg
 
 **on Ubuntu**:: 
 
-   sudo apt-get install libasound2-dev
    sudo apt install ffmpeg
 **run this code to check if you have install ffmpeg successfully.**::
 

@@ -1,34 +1,31 @@
+**Note:** This repository forks `simpleaudio <https://github.com/hamiltron/py-simple-audio/>`_. The original simpleaudio repository can only play .wav file, so I use ffmpeg that could play all kinds of audio files.
+
 playaudio Package
 ===================
 
-The simplaudio package provides cross-platform, dependency-free audio playback
-capability for Python 3 on OSX, Windows, and Linux.
+The playaudio package provides cross-platform audio playback
+capability using ffmpeg for Python 3 on OSX, Windows, and Linux.
 
-MIT Licensed.
-
-`Documentation at RTFD <http://playaudio.readthedocs.io/>`_
---------------------------------------------------------------
 
 Installation
 ------------
 
-Installation (make sure the ``pip`` command is the right one for
-your platform and Python version)::
+Download this repository and reach the directory, run ::
 
-   pip install playaudio
+   python setup.py build
+   python setup.py install
 
-See documentation for additional installation information.
+Important! Install FFmpeg
+--------------
+**on Windows**: download `ffmpeg <https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z/>`_ and add ffmpeg.exe path to environment variables.
 
-Quick Function Check
---------------------
+**on MacOS**::
 
-.. code-block:: python
+   brew install ffmpeg
 
-   import playaudio.functionchecks as fc
+**on Ubuntu**:: 
 
-   fc.LeftRightCheck.run()
-
-See documentation for more on function checks.
+   sudo apt install ffmpeg
 
 Simple Example
 --------------
@@ -41,17 +38,6 @@ Simple Example
    play_obj = wave_obj.play()
    play_obj.wait_done()
 
-Support
--------
-
-For usage and how-to questions, first checkout the tutorial in the
-documentation. If you're still stuck, post a question on
-`StackOverflow <http://stackoverflow.com/>`_
-and **tag it 'pyplayaudio'**.
-
-For bug reports, please create an
-`issue on Github <https://github.com/hamiltron/py-simple-audio/issues>`_
-.
 
 Big Thanks To ...
 -----------------

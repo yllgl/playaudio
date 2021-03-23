@@ -9,8 +9,13 @@ capability using ffmpeg for Python 3 on OSX, Windows, and Linux.
 
 Installation
 ------------
+**if you are on Ubuntu,first you should run this code in order to prevent compile errors.**:: 
+
+   sudo apt-get install libasound2-dev
+
 
 Download this repository and reach the directory, run ::
+
 
    python setup.py build
    python setup.py install

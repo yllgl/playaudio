@@ -26,6 +26,10 @@ Important! Install FFmpeg
 **on Ubuntu**:: 
 
    sudo apt install ffmpeg
+**run this code to check if you have install ffmpeg successfully.**::
+
+   ffmpeg -version
+
 
 Simple Example
 --------------
